@@ -7,11 +7,11 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
+    steps:
+    - uses: actions/checkout@v3
 
-        - name: runtest
-          run: echo "running on feature branch"
+    - name: runtest
+    run: echo "running on feature branch"
 
-         - name: deploy
-          run: echo "deploying on to the feature branch"
+    - name: deploy
+    run: echo "deploying on to the feature branch"
