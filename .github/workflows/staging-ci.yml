@@ -1,0 +1,17 @@
+name: Staging Cicd Development 
+
+on: 
+    push:
+      branches: 
+        - 'staging/*'
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: runtest
+    run: echo "running on staging branch"
+
+    - name: deploy
+    run: echo "deploying on to the feature branch"
